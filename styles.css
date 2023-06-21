@@ -1,7 +1,26 @@
+/* Header */
+.menu_nav{display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.menu {text-decoration: none;
+    padding: 2%;
+    
+color:black;
+}
+.menu:hover { color: #0065FC;
+    text-decoration: overline;
+
+
+}
+
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
 }
+
 
 :root {
     --main-color: #0065FC;
