@@ -1,7 +1,9 @@
 /* Header */
 .imagenav{display: flex;
     justify-content: flex-start;
-width: 80%;}
+    max-width: 50%;
+   max-height: 50%;
+}
 .menu_nav{display: flex;
 
     align-items: center;
@@ -9,7 +11,7 @@ width: 80%;}
 }
 .navigation{display: flex;
 justify-content: flex-end;
-padding-left: 800px;
+padding-left: 560px;
 gap: 15px;}
 
 
@@ -25,7 +27,7 @@ color:black;
 
 /******* Barre de navigation **********/    
 
-.h1heber {display: flex;
+.h1-hebergement {display: flex;
     flex-direction: column;
     flex-shrink: 0;
     align-self: stretch;
@@ -91,21 +93,33 @@ color: black}
 { display: flex;
 align-items: center;
 gap: 15px;
-height: 50%;
+width: 1%;
+}
+
+.filtertext { font-weight: 600;
+font-size: 12px;
 }
 
 .filtericons {display: flex;
 border-radius: 25px;
-padding:16px 32px 16px 32px;
+padding:6px 10px 6px 10px;
 border: 2px solid;
 border-color:#F2F2F2;
 cursor: pointer;
-
+align-items: baseline;
 
 }
+
+
+.filtertextpepite{ font-weight: 600;
+    font-size: 12px;
+    white-space:nowrap; }
+
+    
 .filtericons:hover {background: var(--blue-light, #DEEBFF);}
  .icons {
-padding-right: 10px;
+padding-right: 5px;
+
 }
 .textlogement {
     display: flex;
@@ -122,28 +136,33 @@ padding-right: 10px;
     
     .hebergement-title {  
         margin-top: 0px;
+        margin-bottom: 30px;
         font-size: 22px;
         font-family: Raleway;
         font-weight: 700;}
 
-        .conteneur1 {
+        .container-hebergement {
             display: flex;
             flex-direction: row;
          justify-content: space-around;  
          flex-wrap: wrap;
-         gap: 20px;
+         gap: 5px;
+         margin-bottom: 5px;
 
         }
     .card-hebergement 
         {
-    border: 6px solid white;
+    border: 3px solid white;
     background-color: white;
-border-radius: 25px;
-width: 200px;
-height: 250px;
+border-radius: 16px;
+width: 30%;
+height: 200px;
 box-shadow: 0 4px 8px 0 rgba(6, 90, 135, 0.1);
 transition: 0.3s;
 cursor: pointer;
+margin-bottom: 15px;
+margin: 3px;
+
 
 }
 .card-hebergement:hover {box-shadow: 0 8px 16px 0 rgba(6, 90, 135, 0.5)}
@@ -152,18 +171,22 @@ cursor: pointer;
 .imagecard {
 border-radius: 20px 20px 0px 0px;
 width: 100%;
-height: 60%;
+height: 120px;
 object-fit: cover;
 
 
  }
  .canebiere{  
-    font-size: 16px;
-    margin: 8px; }
+    font-size: 15px;
+    margin: 5px;
+white-space:nowrap }
 
-   .title_hebergement{  margin: 5px; }
+   .title_hebergement{  margin: 2px;
+    font-size: 15px;
+white-space: nowrap; }
 
-   .text_hebergement{ margin-top: 8px;
+   .text_hebergement{  font-size: 14px;
+    margin-top: 8px;
 margin-bottom: 8px;
 margin-left: 5px;}
 
@@ -185,36 +208,40 @@ margin-left: 5px;}
 
 
      /*******      CARDS Activités        **********/  
+.activity-title { margin-top: 10px;}
 
-    .conteneur2 {display: flex;
-    flex-direction: row ; 
-    justify-content: space-around;
+    .container-activity {display: flex;
     flex-wrap: wrap;
 
    } 
      
       .card-activity {
         border : solid white;
-        width: 260px;
+        width: 23%;
         height: 400px ;
         border-radius: 20px 20px 20px 20px;
         box-shadow: 0 4px 8px 0 rgba(6, 90, 135, 0.1);
 transition: 0.3s;
 cursor: pointer;
+margin: 8px;
    }
 
      .card-activity:hover {box-shadow: 0 8px 16px 0 rgba(6, 90, 135, 0.5)}
 
 .image-activity{ width: 100%;
-height: 80%;
+height: 90%;
 border-radius: 20px 20px 0px 0px;
 object-fit: cover;
    }
 
 .name-activity{ display: flex;
 padding-left: 10px;
-font-size: 16px;
+font-size: 15px;
 font-weight: 700;
+white-space: nowrap;
+margin-top :5px ;
+margin-bottom: 0px;
+
   }
   
 /*******      Footer        **********/  
@@ -222,7 +249,8 @@ font-weight: 700;
 .footer { background-color: #F2F2F2;
     display: flex;
     justify-content: flex-start;
-    gap: 200px  ;
+    gap: 120px  ;
+    margin-top: 40px;
 }
 
 .ul1 { list-style: none;
@@ -251,16 +279,14 @@ cursor: pointer;
 
 
 
-
-
 /****** Icons colors ***********/
 
 .fa-solid .fa-magnifying-glass{ color: #ffffff;}
 .fa-solid .fa-person .icons{ color: #0065FC;}
-.fa-regular .fa-money-bill .icons { color: #0065FC; }
+.fa-solid .fa-money-bill .icons{ color: #0065FC;  }
 .fa-solid .fa-heart .icons {color: #0065FC;}
 .fa-solid .fa-fire .icons {color: #0065FC;}
-.fa-regular .fa-circle-info {color: #0065FC;}
+.fa-solid .fa-circle-info .icons {color: #0065FC;}
 
 
 /****** General ***********/
@@ -287,7 +313,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0 25px;
     box-sizing: border-box;
 }
 
@@ -428,6 +454,21 @@ cursor: pointer; }
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media screen and (max-width: 768px) {.menu_nav  {flex-direction: column;
+justify-content: center;
+font-size: 32px;
+
+
+} }
+@media screen and (max-width: 768px) {.navigation  {
+align-items: center;
+justify-content:center;
+padding: 0%;
+gap: 100px;
+margin-top: 30px;
+} }
+
+
+@media screen and (max-width: 767.98px) { .main-container {flex-direction: column;}
     /* ... */
 }
