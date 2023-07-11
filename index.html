@@ -32,13 +32,14 @@
         <main>
             <!--HEADER -->
             <header>
-                <nav class="menu_nav">
+                <a href="#" id="logo"><img class="imagenav" src="images/logo/Booki.png" alt="logo du site web">
+                <div class="navigation">
 
-                    <a href="#" id="logo"><img class="imagenav" src="images/logo/Booki.png" alt="logo du site web">
+                   
                     </a>
-                    <div class="navigation">
-                        <a href="#" class="menu">Hébergements </a>
-                        <a href="#" class="menu">Activités</a>
+                    <nav class="navigation_menu">
+                        <a href="#hebergement" class="menu">Hébergements </a>
+                        <a href="#activity" class="menu">Activités</a>
                     </div>
 
                 </nav>
@@ -46,7 +47,7 @@
             <!--FORMULAIRE DE RECHERCHE -->
             <h1 class="h1-hebergement">Trouvez votre hébergement pour des vacances de rêve </h1>
 
-            <p class="textheber">En plein centre-ville ou en pleine nature</p>
+            <p class="text_town">En plein centre-ville ou en pleine nature</p>
             <form action="" method="get">
 
                 <div class="search_container">
@@ -55,8 +56,8 @@
                             style="color: #000000;"></i> </label>
                     <div class="searchbar"> <input type="barre" type="text" id="search" placeholder="Marseille, France"
                             name="search"> </div>
-                    <button class="buttonpush"><span>Rechercher</span></button>
-                    <i class="fa-solid fa-magnifying-glass"> </i>
+                    <button class="buttonpush"><span class="search_span">Rechercher</span> <i class="fa-solid fa-magnifying-glass icons"> </i></button>
+                    
 
                 </div>
             </form>
@@ -64,17 +65,18 @@
 
 
             <!--          FILTRES          -->
-            <div class="filtres">
-                <h3 class="filtreh3">Filtres</h3>
-
-                <div class="filtericons"><i class="fa-solid fa-money-bill icons"></i>
+        <div class="box-filters">    
+                <h3 class="filtreh3 ">Filtres</h3>
+              <div class="responsive1">
+                <div class="filtericons "><i class="fa-solid fa-money-bill icons"></i>
                     <p class="filtertext">Économique</p>
                 </div>
-
+   
                 <div class="filtericons"><i class="fa-solid fa-person icons"></i>
-                    <p class="filtertext">Familiale </p>
+                    <p class="filtertext">Familial </p>
                 </div>
-
+            </div>
+             <div class="responsive2">
                 <div class="filtericons"><i class="fa-solid fa-heart icons"></i>
                     <p class="filtertext">Romantique </p>
                 </div>
@@ -82,6 +84,7 @@
                 <div class="filtericons"> <i class="fa-solid fa-fire icons"></i>
                     <p class="filtertextpepite">Nos Pépites</p>
                 </div>
+              </div>
             </div>
 
             <div class="textlogement">
@@ -95,7 +98,7 @@
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
 
-                    <h1 class="hebergement-title">Hébergements à Marseille</h1>
+                    <h1 id="hebergement" class="hebergement-title">Hébergements à Marseille</h1>
 
 
                     <div class="container-hebergement">
@@ -287,7 +290,7 @@
 
             <section class="activity">
 
-                <h2 class="activity_title"> Activités à Marseille</h2>
+                <h2 id="activity" class="activity_title"> Activités à Marseille</h2>
 
                 <div class="container-activity">
 
