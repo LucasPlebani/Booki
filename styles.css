@@ -145,14 +145,15 @@ padding-right: 5px;
 
 .filtreh3 {float: left;}
 
-.responsive1 {display: flex;
+.responsive_class_economique_familial {display: flex;
     float: left;
     padding: 10px 0px 10px 10px;
     gap: 10px;
 }
-.responsive2 {display: flex;
+.responsive_class_romantique_pepite {display: flex;
     padding: 10px;
     gap: 10px ;
+    
     
 } 
 
@@ -254,7 +255,7 @@ margin: 30px 0px 20px 25px;}
      
       .card-activity {
         border : solid white;
-        width: 23%;
+        width: 22%;
         height: 400px ;
         border-radius: 20px 20px 20px 20px;
         box-shadow: 0 4px 8px 0 rgba(6, 90, 135, 0.1);
@@ -288,25 +289,39 @@ margin-bottom: 0px;
     justify-content: flex-start;
     margin-top: 40px;
     margin-right: auto;
+    text-decoration: none;
+   
 }
 
-.ul1 { list-style: none;
-flex-direction: row; 
+.footer-class { display: block;
+flex-direction: column;
 cursor: pointer; 
 margin-right: auto;
+padding-top: 10px;
+padding-left: 10px;
+
 }
 
-.principal { font-size: 18px;
+.footer-weight { 
+    display: flex;
+    font-size: 18px;
     font-weight: 600;
     padding-bottom: 20px;
-    }
-.principal:hover {color: #0065FC;}    
+    color: black;
+    text-decoration: none;
 
-.li-list { padding-bottom: 10px;
+    }
+
+
+.footer-list { 
+    text-decoration: none;
+    color: black;
+    display: flex;
+    padding-bottom: 10px;
     font-size: 14px;
     font-weight: 300;
 }
-.li-list:hover{ color: #0065FC;}
+
 
 
 
@@ -394,9 +409,7 @@ cursor: pointer; }
     justify-content: space-between;
 }
 
-.hebergements-and-populaires section {
-   
-}
+
 .hebergements { background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
@@ -469,6 +482,8 @@ cursor: pointer; }
     .navigation_menu { font-size: 18px;}
     .textheber {font-size: 20px;}
 
+    .localisation{ padding: 25px;}
+    .buttonpush { padding-top: 23px   ;}
    
 }
     
@@ -575,16 +590,16 @@ font-size: 19px;}
 .search_container { justify-content: center;
 }
  .localisation {padding: 20px 22px;}
-.searchbar input#search { font-size: 20px;
+
+.searchbar { font-size: 20px;
 border:none;
-border-bottom:solid 0.5px rgb(227, 224, 224);
-border-top: solid 0.5px rgb(227, 224, 224);
-padding-top: 20px;
-padding-bottom: 20px;
+border-bottom:solid 1px rgb(227, 224, 224);
+border-top: solid 1px rgb(227, 224, 224);
+
 margin-right: 0%;
 padding-right: 50px;
 }
- 
+
  .search_span  {display: none;}
  .fa-solid.fa-magnifying-glass {display: flex;
 color:#DEEBFF; }
@@ -606,17 +621,18 @@ margin-left: -50px;
 }
 .box-filters {flex-direction: column;}
 
-.responsive1 {flex-wrap: wrap;
+.responsive_class_economique_familial {flex-wrap: wrap;
     align-items: center;
     justify-content: center;
    gap: 10px;
    float: none;
 }
-.responsive2 {flex-wrap: wrap;
+.responsive_class_romantique_pepite {flex-wrap: wrap;
 align-items: center;
 padding-top: 10px;
 justify-content: center;
 gap: 10px;}
+
 .filtericons {width: 35%;
 justify-content: center;
 ;}
@@ -650,7 +666,7 @@ justify-content: center;
 .populaires-cards .card-rating {margin-top: 15%;}
 
 .card-hebergement {flex-direction: column;
-    width: 80%;
+    width: 90%;
 height: 250px;}
     .imagecard { object-position: center;
     height: 70%;}
@@ -671,17 +687,18 @@ height: 250px;}
       .container-activity {flex-direction: column;
     align-items: center;
 }
-    .card-activity {width: 70%;
+    .card-activity {width: 90%;
         height: 250px;
       
    }
    .image-activity {object-position: center;
-height: 80%;}
+    height: 80%;
+}
    .name-activity {padding-top: 5px;}
 
 .footer {flex-direction: column;
 }
-.il1 { margin-left: 5%;}
+.footer-class { margin-left: 5%;}
 }
     /* 500px*/
 
@@ -690,26 +707,22 @@ height: 80%;}
         }  
 
     
-        .searchbar input#search { font-size: 20px;
-            border:none;
-            border-bottom:solid 0.5px rgb(227, 224, 224);
-            border-top: solid 0.5px rgb(227, 224, 224);
-            padding-top: 20px;
-            padding-bottom: 20px;
+        .searchbar input#search { 
             margin-right: 0%;
             padding-right: 20px;
-            font-size: 15px;
-            }
-             .localisation {    padding: 21px 25px;}
+            font-size: 12px } 
+
+
+             .localisation {    padding: 19px;}
              .search_span  {display: none;}
              .fa-solid.fa-magnifying-glass {display: flex;
             color:#DEEBFF; }
             
             .buttonpush {  
-                font-size: 16px;
+                font-size: 18px;
             border-radius:  20px 20px;
-            padding: 22px 22px ;
-            margin-left: -50px; 
+            padding: 19px 17px ;
+            margin-left: -42px; 
             
             }
             .fa-solid.fa-location-dot.position  { font-size: 18px;}
