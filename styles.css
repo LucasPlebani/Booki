@@ -495,17 +495,23 @@ cursor: pointer; }
 @media screen and (max-width:1024px)  {
     .navigation_menu { font-size: 18px;}
     
-    .hebergements-and-populaires {flex-direction: column;}
+    .hebergements-and-populaires {flex-direction: column;
+        flex-direction:column-reverse;
+        gap: 30px ;
+    }
 
     .hebergements {
         width: 100%;
         display: block;
+        
     }
 
     .populaires {
         width: 100%;
         margin-top: 50px;
         display: block;
+       
+       
     }
 
     .populaires-cards {
